@@ -6,63 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de caixa box-level</title>
     <style>
-        h1{ /* BOX-LEVEL */
-
-            /*
-            display: inline;
-            O H1 deixa de ser box-level.
-            */           
-
+        h1{             
             background-color: lightgreen;
             text-align: center;
             height: 300px;
-            width: 300px;
-            /*
-            border-width: 10px;
-            border-style:double;
-            border-color: darkgreen;
-            */         
-            border: 10px solid darkgreen; /*simplifica a de cima como o font-family*/
-
-            /*
-            padding-top: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;              
-            */         
-            padding: 10px; /* = padding: 10px 10px 10px 10px*/
-
-            /*
-            margin-top: 10px;
-            margin-right: 10px;
-            margin-bottom: 40px;
-            margin-left: 10px;    
-
-            margin: 10px 10px 40px 10px; --- >modo simples
-            
-            margin: auto;
-            centraliza. Inviabiliza os de cima.
-            */         
-            margin: 10px auto 40px auto ; /*Ou para centralizar*/
-
-            /*
-            (Fica entre o border e margin)
-            outline-width: 5px; 
-            outline-style: dashed;
-            outline-color: chocolate;     
-            */         
-            outline: 5px dashed chocolate; /*simplificado*/
+            width: 300px;            
+            border: 10px solid darkgreen;
+            padding: 10px;
+            margin: 10px auto 40px auto ;
+            outline: 5px dashed chocolate;
         }
-        a{ /* INLINE-LEVEL */
-
-            /*
-            display:block;
-            O a deixa de ser inline-level e vira box.
-
-            display: inline-block;
-            com caracteristicas de block
-            */
-             
+        a{
             border-width: 5px;
             border-style: solid;
             border-color: darkred;
