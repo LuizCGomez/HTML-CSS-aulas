@@ -11,7 +11,6 @@
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
 
     <picture>
-        <!--A ordem dos tamanhos devem estar certa, do menor para o maior-->
         <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
         <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="imagem flexível">
@@ -19,15 +18,10 @@
 
     <h1>Reproduzir Áudio</h1>
     <p>Vamos aprender a reproduzir áudios em HTML5.</p>
-    <!-- <audio src="midia/Happy Mistake - RKVC.mp3" controls></audio> //-- > "controls" para aparecer o tocador.O comando "autoplay" faz tocar ao carregar a página-->
-    <audio preload="metadata" controls loop> <!--preload="auto" so vai estar pronto depois do que todo saite tenha carregado. preload="metadata" vai carregar algumas informaçõs como nome do arquivo, duração... preload="nono" vai carregar depois que o usuario apertar o play. LOOP para repetir-->
-
-        <!--Para navegador que tem problema com compatibilidade. O site vai tentar carregar os arquivos seguindo a ordem.-->
+    <audio preload="metadata" controls loop> 
         <source src="midia/guanacast-33.mp3" type="audio/mpeg">
         <source src="midia/guanacast-33.ogg" type="audio/ogg">
-        <source src="midia/guanacast-33.wav" type="audio/wav"><!--Evitar arquivos wav por serem grandes-->
-
-        <!--se não conseguir carregar nenhum desses-->
+        <source src="midia/guanacast-33.wav" type="audio/wav">        
         <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
         <a href="midia/Happy Mistake - RKVC.mp3">Clique aqui para baixar o arquivo MP3</a>
     </audio>
