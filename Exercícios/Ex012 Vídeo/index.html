@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p> 
+    <video width="560" height="315" poster="imagens/limoes-capa.png" controls  >
+        <!--poster="imagens/limoes-capa.png" serve como as thumb do youtube-->
+        <source src="midia/Meu-Video.m4v" type="video/mp4">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+        <source src="midia/Meu-video.mp4" type="video/mp4">
+        <source src="midia/Meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1><!--Aqui consome dados dos servidores do YouTube.Diferente do 1º vídeo que está hospedado localmente. Interessante abrir uma conta no YouTube para postar os vídeos que o cliente deseja no por no seu site.
+
+   ----------USAR VÍDEOS SEM DIREITO AUTORAL OU OS SEUS PRÓPRIOS VíDEOS--------------->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G3bzbOsV5dc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--YouTube libera incoerporar em qualquer site. Atenção na "PIRATARIA"-->
+    <!--Vimeo, segundo Guanabara, é melhor no quesito "pirataria" evita que outros vejam seu vídeo sem acesso. -----PESQUISAR SOBRE----->    
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/197093965?h=7fbc516b5a" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+
+</body>
+</html>
